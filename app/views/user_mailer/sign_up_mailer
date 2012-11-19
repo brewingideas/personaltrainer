@@ -1,0 +1,7 @@
+Hello Welcome to your very own personal trainer
+
+Your email address is <%= @user.email %>
+
+Your username is <%= username@user.username %>
+
+Thanks

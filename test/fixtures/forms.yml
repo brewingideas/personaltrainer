@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first: MyString
+  name: MyString
+  second: MyString
+  name: MyString
+  age: 1
+  training: MyString
+  time: 1
+  activity: MyString
+  history: MyText
+  goals: MyText
+
+two:
+  first: MyString
+  name: MyString
+  second: MyString
+  name: MyString
+  age: 1
+  training: MyString
+  time: 1
+  activity: MyString
+  history: MyText
+  goals: MyText
