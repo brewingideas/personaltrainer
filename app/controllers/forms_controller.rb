@@ -24,6 +24,9 @@ class FormsController < ApplicationController
   # GET /forms/new
   # GET /forms/new.json
   def new
+    # Rik note:
+    # @form = current_user.forms.new
+
     @form = Form.new
 
     respond_to do |format|
@@ -40,6 +43,9 @@ class FormsController < ApplicationController
   # POST /forms
   # POST /forms.json
   def create
+    # Rik note:
+    # @form = current_user.forms.new(params[:form])
+
     @form = Form.new(params[:form])
 
     respond_to do |format|

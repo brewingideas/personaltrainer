@@ -3,9 +3,7 @@
 <table>
   <tr>
     <th>First</th>
-    <th>Name</th>
     <th>Second</th>
-    <th>Name</th>
     <th>Age</th>
     <th>Training</th>
     <th>Time</th>
@@ -19,10 +17,8 @@
 
 <% @forms.each do |form| %>
   <tr>
-    <td><%= form.first %></td>
-    <td><%= form.name %></td>
-    <td><%= form.second %></td>
-    <td><%= form.name %></td>
+    <td><%= form.first_name %></td>
+    <td><%= form.second_name %></td>
     <td><%= form.age %></td>
     <td><%= form.training %></td>
     <td><%= form.time %></td>
