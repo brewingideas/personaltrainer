@@ -1,6 +1,10 @@
 Personal::Application.routes.draw do
+  
   resources :forms
-  resources :users
+  resources :users, only: [:show, :new, :create, :edit, :update]
+  resource :sessions, only: [:new, :create, :destroy]
+
+  root to: "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

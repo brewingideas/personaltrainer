@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :link, :name, :password_digest, :url, :username, :password, :password_confirmation, :avatar
 
-  has_many :lists
+  has_many :workouts
 
   has_secure_password
 
