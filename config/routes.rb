@@ -1,7 +1,8 @@
 Personal::Application.routes.draw do
-  
+
   resources :forms
   resources :users, only: [:show, :new, :create, :edit, :update]
+  resources :workout, except: [:show]
   resource :sessions, only: [:new, :create, :destroy]
 
   root to: "home#index"
