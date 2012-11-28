@@ -11,21 +11,20 @@
 	<header>
 		<h1>Personal Trainer!</h1>
 		<% if current_user? %>
-			Logged is as <%= current_user.user.name %> |
-			<%= link_to "Log out", session_path, method: :delete %>
+			Logged is as <%= current_user.username %> |
+			<%= link_to "Log out", sessions_path, method: :delete %>
 		<% else %>
-				<%= link_to "Sign up",  new_user_path %> |
+				<%= link_to "Sign up", new_user_path %> |
 				<%= link_to "Log in", new_sessions_path %>
 		<% end %>
-
 	</header>
 
-	<% if flash [:alert] %>
-		<div id="alert"><%= flash [:alert] %></div>
+	<% if flash[:alert] %>
+		<div id="alert"><%= flash[:alert] %></div>
 	<% end %>
 
-	<% if flash [:error] %>
-		<div id="error"><%= flash [:error] %></div>
+	<% if flash[:error] %>
+		<div id="error"><%= flash[:error] %></div>
 	<% end %>
 
 <%= yield %>

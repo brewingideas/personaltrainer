@@ -1,8 +1,12 @@
 Personal::Application.routes.draw do
 
+  get "accounts/edit"
+
+  get "accounts/update"
+
   resources :forms
   resources :users, only: [:show, :new, :create, :edit, :update]
-  resources :workout, except: [:show]
+  resources :workouts, except: [:show]
   resource :sessions, only: [:new, :create, :destroy]
 
   root to: "home#index"
