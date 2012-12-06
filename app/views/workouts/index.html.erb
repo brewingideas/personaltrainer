@@ -1,0 +1,12 @@
+<% @workouts.each do |workout| %>
+	<h3><%= workout.name %> 
+		<small>
+			<%= link_to "Edit", edit_workout_path(workout) %>
+			<%= link_to "Delete" workout_path(workout), method: :delete, confirm, "Are you sure?" %>
+		</small> 
+		</h3>
+
+	<% end %>
+
+	<%= link_to "New workout", new_workout_path %>
+
